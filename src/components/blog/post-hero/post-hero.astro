@@ -33,7 +33,8 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/**/*.{jpeg,jpg,png,gif,svg,avif,webp}",
   { eager: true }
 );
-const imageSrc = images[image]?.default ?? image;
+
+const imageSrc = images[image]?.default || image;
 ---
 
 <div class="post-hero">
@@ -64,15 +65,18 @@ const imageSrc = images[image]?.default ?? image;
   </div>
   <div class="post-data">
     <p>{authorWithFallback}</p>
-    <p>
-      {
-        dateObj.toLocaleDateString(undefined, {
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-        })
-      }
-    </p>
+    {
+      dateObj && (
+        <p>
+          {dateObj.toLocaleDateString(undefined, {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })}
+        </p>
+      )
+    }
+
     <div class="post-data-time">
       <p>{wordCount} words</p>
       <p>{readingTime}</p>
