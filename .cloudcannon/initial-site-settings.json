@@ -7,12 +7,12 @@
     "output_path": "dist",
     "preserved_paths": "node_modules",
     "preserveOutput": false,
-    "includeGit": true,
+    "includeGit": false,
     "environment_variables": [],
     "manually_configure_urls": false,
     "hugo_version": "0.128.1",
     "ruby_version": "2.7.3",
-    "node_version": "18",
+    "node_version": "20",
     "deno_version": "1.40.2"
   }
 }
