@@ -115,6 +115,7 @@ collections_config:
       thumb_image_alt:
         type: textarea
         label: Thumbnail Image Alt Text
+        hidden: '!thumb_image_path'
         options:
           empty_type: string
       author:
@@ -294,6 +295,19 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
+  image:
+    type: object
+    options:
+      preview:
+        icon: image
+        text: 
+          - key: image_alt
+          - Image
+        subtext:
+          - key: image_path
+          - Select or upload an image.
+        image:
+          - key: image_path
   image_path:
     type: image
     comment: The path to the source file of the image.
