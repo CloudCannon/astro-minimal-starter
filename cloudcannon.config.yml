@@ -135,6 +135,7 @@ collections_config:
           empty_type: array
   data:
     path: data
+    disable_url: true
     disable_add: true
     disable_add_folder: true
     _inputs:
