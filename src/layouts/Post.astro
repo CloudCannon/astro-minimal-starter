@@ -33,24 +33,26 @@ const filteredPosts = posts.filter(
       <editable-component data-prop="post_hero" data-component="PostHero">
         <PostHero {...frontmatter.post_hero} bodyContent={body} />
       </editable-component>
-      <editable-text data-prop="@content">
-        <div class="prose" data-pagefind-body>
+      <div class="prose" data-pagefind-body>
+        <editable-text data-prop="@content" data-type="block">
           <slot />
-        </div>
-      </editable-text>
+        </editable-text>
+      </div>
     </article>
   </div>
 
-  {filteredPosts.length > 0 && (
-    <section class="mx-auto max-w-6xl px-8 pb-16">
-      <h2 class="text-2xl font-bold mb-6">Recent Posts</h2>
-      <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {filteredPosts.slice(0, 3).map((post) => (
-          <li>
-            <PostSummary {...post} loading="lazy" />
-          </li>
-        ))}
-      </ul>
-    </section>
-  )}
+  {
+    filteredPosts.length > 0 && (
+      <section class="mx-auto max-w-6xl px-8 pb-16">
+        <h2 class="text-2xl font-bold mb-6">Recent Posts</h2>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {filteredPosts.slice(0, 3).map((post) => (
+            <li>
+              <PostSummary {...post} loading="lazy" />
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
 </Layout>

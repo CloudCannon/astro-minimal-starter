@@ -1,8 +1,27 @@
 ---
 import markdownit from "markdown-it";
 const md = markdownit({ html: true });
-const { content } = Astro.props;
+
+interface Props {
+  content: string;
+  dataProp?: string;
+  dataType?: string;
+}
+
+const { content, dataProp, dataType } = Astro.props;
 const markdownContent = content ? md.render(content) : "";
 ---
 
-<div class="prose" set:html={markdownContent} />
+{
+  dataProp ? (
+    <div
+      class="prose"
+      data-editable="text"
+      data-prop={dataProp}
+      data-type={dataType}
+      set:html={markdownContent}
+    />
+  ) : (
+    <div class="prose" set:html={markdownContent} />
+  )
+}

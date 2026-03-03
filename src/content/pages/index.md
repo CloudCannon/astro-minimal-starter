@@ -33,18 +33,18 @@ content_blocks:
       CloudCannon. It strikes a balance between minimal boilerplate and
       useful features out of the box:
 
+      
+      - Tailwind CSS v4
 
-      * Tailwind CSS v4
+      - Blog with pagination & tags
 
-      * Blog with pagination & tags
+      - Visual editing with Editable Regions
 
-      * Visual editing with Editable Regions
+      - Header and Footer controls
 
-      * Header and Footer controls
+      - Create and delete pages
 
-      * Create and delete pages
-
-      * SEO controls
+      - SEO controls
     image:
       image_path: /src/assets/images/transparent-bg/undraw-hello.svg
       alt_text: >-

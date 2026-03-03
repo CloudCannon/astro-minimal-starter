@@ -35,8 +35,8 @@ const imageSrc = allImages[image.image_path]?.default ?? image.image_path;
       >
         {heading}
       </h1>
-      <div data-editable="text" data-prop="subheading" data-type="text" class="text-lg text-gray-600 max-w-prose">
-        <Markdown content={subheading} />
+      <div class="text-lg text-gray-600 max-w-prose">
+        <Markdown content={subheading} dataProp="subheading" dataType="text" />
       </div>
       {button?.link && (
         <a

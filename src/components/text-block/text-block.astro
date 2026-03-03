@@ -20,8 +20,8 @@ const { heading, text_content } = Astro.props;
         {heading}
       </h2>
     )}
-    <div data-editable="text" data-prop="text_content" data-type="block" class="text-gray-600">
-      <Markdown content={text_content} />
+    <div class="text-gray-600">
+      <Markdown content={text_content} dataProp="text_content" dataType="block" />
     </div>
   </div>
 </section>
