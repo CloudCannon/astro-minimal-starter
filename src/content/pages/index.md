@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: CloudCannon Astro Starter
+title: Astro Minimal Starter
 seo:
   page_description: >-
     A starting point for developers looking to build a website with Astro,
@@ -13,7 +13,7 @@ seo:
   no_index: false
 hero_block:
   _name: Hero
-  heading: CloudCannon Astro Starter
+  heading: Astro Minimal Starter
   subheading: >-
     A **minimal** starting point for developers looking to build a website with Astro,
     using Editable Regions in CloudCannon. Create your own copy, and start

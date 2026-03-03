@@ -1,4 +1,4 @@
-# CloudCannon Astro Starter
+# Astro Minimal Starter
 
 A minimal starter template for building an Astro site with [CloudCannon](https://cloudcannon.com/) using **Editable Regions** for visual editing.
 
