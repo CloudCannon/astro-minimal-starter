@@ -76,14 +76,4 @@ content_blocks:
     button:
       text: CloudCannon Docs
       link: https://cloudcannon.com/documentation/
-  - _name: LeftRight
-    heading: A new block
-    text_content: Heres some content too. This can all be on the page now!
-    image:
-      image_path: /src/assets/images/transparent-bg/undraw-hello.svg
-      alt_text: An image
-    flipped: true
-    button:
-      text: A buttton added
-      link: /added/
 ---
