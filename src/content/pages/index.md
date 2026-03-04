@@ -3,8 +3,8 @@ _schema: default
 title: Astro Minimal Starter
 seo:
   page_description: >-
-    A starting point for developers looking to build a website with Astro,
-    using Editable Regions in CloudCannon.
+    A starting point for developers looking to build a website with Astro, using
+    Editable Regions in CloudCannon.
   canonical_url:
   featured_image:
   featured_image_alt:
@@ -15,17 +15,18 @@ hero_block:
   _name: Hero
   heading: Astro Minimal Starter
   subheading: >-
-    A **minimal** starting point for developers looking to build a website with Astro,
-    using Editable Regions in CloudCannon. Create your own copy, and start
-    creating your own components to use in the Visual Editor. 
-    
-    
-    Once you've explored this minimal starter, consider 
-    taking a look at the [Astro Component Starter](https://github.com/CloudCannon/astro-component-starter) to assist in building out your components.
+    A **minimal** starting point for developers looking to build a website with
+    Astro, using Editable Regions in CloudCannon. Create your own copy, and
+    start creating your own components to use in the Visual Editor. 
+
+
+    Once you've explored this minimal starter, consider  taking a look at the
+    [Astro Component
+    Starter](https://github.com/CloudCannon/astro-component-starter) to assist
+    in building out your components.
   image:
     image_path: /src/assets/images/transparent-bg/undraw-online-test.svg
-    alt_text: >-
-      An illustration of someone leaning against a desktop computer monitor.
+    alt_text: An illustration of someone leaning against a desktop computer monitor.
   button:
     text: Get Started
     link: https://github.com/CloudCannon/astro-starter/
@@ -34,10 +35,10 @@ content_blocks:
     heading: Keep what you need. Delete the rest.
     text_content: >-
       This starter aims to get developers building their own site quickly in
-      CloudCannon. It strikes a balance between minimal boilerplate and
-      useful features out of the box:
+      CloudCannon. It strikes a balance between minimal boilerplate and useful
+      features out of the box:
 
-      
+
       - Tailwind CSS v4
 
       - Blog with pagination & tags
@@ -51,9 +52,9 @@ content_blocks:
       - SEO controls
     image:
       image_path: /src/assets/images/transparent-bg/undraw-hello.svg
-      alt_text: >-
-        An illustration of someone sitting at a desk with a monitor and books.
+      alt_text: An illustration of someone sitting at a desk with a monitor and books.
     flipped: true
+    button: {}
   - _name: LeftRight
     heading: You choose your editing experience.
     text_content: >-
@@ -70,10 +71,19 @@ content_blocks:
       collaborate via git.
     image:
       image_path: /src/assets/images/transparent-bg/undraw-startup.svg
-      alt_text: >-
-        An illustration of someone sitting at a desk.
+      alt_text: An illustration of someone sitting at a desk.
     flipped: false
     button:
       text: CloudCannon Docs
       link: https://cloudcannon.com/documentation/
+  - _name: LeftRight
+    heading: A new block
+    text_content: Heres some content too. This can all be on the page now!
+    image:
+      image_path: /src/assets/images/transparent-bg/undraw-hello.svg
+      alt_text: An image
+    flipped: true
+    button:
+      text: A buttton added
+      link: /added/
 ---
