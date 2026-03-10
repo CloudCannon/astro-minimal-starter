@@ -1,10 +1,10 @@
 ---
 import PostLayout from "../../layouts/Post.astro";
-import { getCollection, getEntry } from "astro:content";
+import { getCollection, getEntry, render } from "astro:content";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
-  return posts.map((post) => ({ params: { slug: post.slug } }));
+  return posts.map((post) => ({ params: { slug: post.id } }));
 }
 
 if (!Astro.params.slug) {
@@ -14,7 +14,7 @@ const post = await getEntry("blog", Astro.params.slug);
 if (!post) {
   throw new Error("Failed to get post with slug: " + Astro.params.slug);
 }
-const { Content } = await post.render();
+const { Content } = await render(post);
 ---
 
 <PostLayout frontmatter={post.data} body={post.body}>
