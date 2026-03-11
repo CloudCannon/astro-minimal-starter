@@ -10,7 +10,7 @@ export async function GET() {
     description: site.description,
     site: 'https://tiny-jackal.cloudvent.net',
     items: posts.map((post) => ({
-      link: `/blog/${post.slug}`,
+      link: `/blog/${post.id}`,
       title: post.data.title,
       pubDate: post.data.post_hero.date,
     })),

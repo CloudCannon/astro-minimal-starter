@@ -159,6 +159,8 @@ collections_config:
         comment: Link for the logo in the top left of the footer.
       copyright:
         comment: Automatically prefixed with the current year.
+      image:
+        type: image
 
 collection_groups:
   - heading: Pages

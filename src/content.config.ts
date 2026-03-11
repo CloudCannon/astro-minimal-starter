@@ -1,4 +1,6 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection } from "astro:content";
+import { z } from 'astro/zod';
+import { glob } from 'astro/loaders';
 
 const seoSchema = z
   .object({
@@ -13,6 +15,7 @@ const seoSchema = z
   .optional();
 
 const blogCollection = defineCollection({
+  loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/content/blog" }),
   schema: z.object({
     title: z.string(),
     post_hero: z.object({
@@ -43,6 +46,7 @@ const paginatedCollectionSchema = z.object({
 });
 
 const pagesCollection = defineCollection({
+  loader: glob({ pattern: '**/[^_]*.{md,astro}', base: "./src/content/pages" }),
   schema: z.union([paginatedCollectionSchema, pageSchema]),
 });
 
