@@ -2,6 +2,8 @@
 
 A minimal starter template for building an Astro site with [CloudCannon](https://cloudcannon.com/) using **Editable Regions** for visual editing.
 
+See a [demo site](https://tiny-jackal.cloudvent.net/).
+
 ## Features
 
 - Visual editing with [Editable Regions](https://cloudcannon.com/documentation/developer-guides/set-up-visual-editing/an-overview-of-editable-regions/) (text, image, array, source, and component regions)
