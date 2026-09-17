@@ -9,7 +9,7 @@
     "preserveOutput": false,
     "includeGit": false,
     "environment_variables": [],
-    "manually_configure_urls": false,
+    "manually_configure_urls": true,
     "hugo_version": "0.128.1",
     "ruby_version": "2.7.3",
     "node_version": "22",
