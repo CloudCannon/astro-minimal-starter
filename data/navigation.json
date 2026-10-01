@@ -1,7 +1,7 @@
 {
   "header": {
-    "logo": "/images/logos/minimal-logo.svg",
-    "logo_alt_text": "Minimal by CloudCannon logo",
+    "logo": "/images/logos/astro-minimal-starter-logo.svg",
+    "logo_alt_text": "Astro Minimal Starter by CloudCannon logo",
     "logo_url": "/",
     "links": [
       {
@@ -23,8 +23,8 @@
     ]
   },
   "footer": {
-    "logo": "/images/logos/minimal-logo-white.svg",
-    "logo_alt_text": "Minimal by CloudCannon logo",
+    "logo": "/images/logos/astro-minimal-starter-logo-reversed.svg",
+    "logo_alt_text": "Astro Minimal Starter by CloudCannon logo",
     "logo_url": "/",
     "copyright": "MyCompany. All rights reserved.",
     "links": [

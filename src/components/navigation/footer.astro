@@ -4,8 +4,8 @@ import { footer } from "../../../data/navigation.json";
 
 <footer class="bg-gray-800 text-white">
   <div class="mx-auto max-w-6xl px-8 py-12">
-    <div class="grid grid-cols-1 sm:grid-cols-3 items-center gap-8">
-      <a class="flex justify-center sm:justify-start" href={footer.logo_url}>
+    <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-8">
+      <a class="flex justify-center lg:justify-start" href={footer.logo_url}>
         <img class="h-12 w-auto" src={footer.logo} alt={footer.logo_alt_text} />
       </a>
 
@@ -19,7 +19,7 @@ import { footer } from "../../../data/navigation.json";
         ))}
       </ul>
 
-      <div class="text-center sm:text-end text-sm text-gray-400">
+      <div class="text-center lg:text-end text-sm text-gray-400">
         &copy; {new Date().getFullYear()} {footer.copyright}
       </div>
     </div>
